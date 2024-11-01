@@ -1,0 +1,263 @@
+/*
+	Flaticon icon font: Flaticon
+	Creation date: 14/06/2017 16:16
+*/
+
+@font-face {
+  font-family: "InstaSlider";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "InstaSlider";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: InstaSlider;
+	font-style: normal;
+}
+
+.flaticon-right-arrow:before { content: "\f100"; }
+.flaticon-left-arrow:before { content: "\f101"; }
+.flaticon-instagram-2:before { content: "\f102"; }
+.flaticon-instagram-1:before { content: "\f103"; }
+.flaticon-big-instagram-logo:before { content: "\f104"; }
+.flaticon-instagram:before { content: "\f105"; }
+.flaticon-plus:before { content: "\f106"; }
+
+
+/**
+ * Basic Style
+ */
+
+.wpb-is-wrapper {
+	padding: 0;
+	margin-bottom: 40px;
+}
+.wpb-is-wrapper img {
+	border-radius: 0;
+	box-shadow: none;
+	display: block;
+}
+.wpb-is-item-link {
+	height: 100%;
+}
+.admin-bar a[class*='lightcase-icon-'].lightcase-icon-close {
+	top: 45px;
+}
+@media only screen and (max-width : 767px) {
+    .wpb-is-item {
+        height: auto !important;
+    } 
+}
+.wpb-is-item-link {
+    display: block;
+    padding: 13px;
+    background: rgba(237, 237, 237, 0.70);
+}
+.wpb-is-item {
+	padding: 10px;
+}
+.wpb-is-wrapper.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.wpb-is-wrapper h3.wpb-is-item-title {
+    margin: 13px 0 0;
+    font-size: 13px;
+}
+.wpb-is-wrapper .wpb-is-item-link,
+.wpb-is-wrapper .wpb-is-item-link:active,
+.wpb-is-wrapper .wpb-is-item-link:visited{
+	color: inherit;
+	text-decoration: none;
+}
+
+.wpb-is-wrapper .wpb-is-item-link:active,
+.wpb-is-wrapper .wpb-is-item-link:focus {
+	outline: 0;
+}
+.wpb-is-item-image {
+	position: relative;
+	display: block;
+    overflow: hidden;
+}
+.wpb-is-item-image:before {
+	font-family: InstaSlider;
+    position: absolute;
+    background: rgba(51, 51, 51, 0.6);
+    width: 100%;
+    height: 100%;
+    content: "\f106";
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding-top: 36%;
+}
+.wpb-is-item-link:hover .wpb-is-item-image:before {
+	opacity: 1;
+	visibility: visible;
+}
+.wpb-is-follow-btn {
+	text-align: center;
+}
+.wpb-is-btn {
+	color: #fff;
+	text-decoration: none;
+	background: #95a5a6;
+	border-color: #7f8c8d;
+	border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0 auto 40px;
+    overflow: hidden;
+    padding: 5px 20px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.wpb-is-btn:hover,
+.wpb-is-btn:focus,
+.wpb-is-btn:active {
+    background: #7f8c8d;
+    color: #fff;
+}
+.wpb-is-btn.wpb-is-btn-follow {
+    background: #3498db;
+    border-color: #2980b9;
+}
+.wpb-is-btn.wpb-is-btn-follow:hover,
+.wpb-is-btn.wpb-is-btn-follow:focus,
+.wpb-is-btn.wpb-is-btn-follow:active {
+    background: #2980b9;
+}
+body .wpb-is-btn:active,
+body .wpb-is-btn:visited {
+	color: #fff;
+}
+.wpb-is-btns-wrapper > .wpb-is-btn.wpb-is-btn-disabled {
+    display: none;
+    pointer-events: none;
+    cursor: default;
+}
+body .wpb-is-btn:focus {
+	outline: 0;
+}
+.wpb-is-btn i {
+	margin-right: 10px;
+}
+.wpb-instragram-feed-load-more-wrapper {
+    text-align: center;
+}
+.wpb-is-loading {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+.wpb-is-btns-wrapper {
+    text-align: center;
+}
+.wpb-is-btns-wrapper > .wpb-is-btn {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/**
+ * Slider
+ */
+
+.wpb-is-content-type-slider {
+    margin-top: 65px;
+    -webkit-font-smoothing: antialiased;
+}
+.wpb-is-content-type-slider .wpb-is-item {
+    padding: 0;
+}
+.wpb-is-content-type-slider .owl-nav {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    margin-top: 0;
+}
+.wpb-is-content-type-slider.owl-theme .owl-nav div {
+    margin-right: 0;
+    margin-left: 10px;
+    padding: 4px 10px;
+    border-radius: 0;
+    font-size: 10px;
+    line-height: 22px;
+    font-weight: bold;
+}
+.wpb-is-content-type-slider.owl-theme .owl-dots {
+    margin-top: 12px;
+}
+.wpb-is-content-type-slider.owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+}
+.wpb-is-content-type-slider.owl-theme .owl-dots .owl-dot span {
+    background: #D6D6D6;
+}
+.wpb-is-content-type-slider.owl-theme .owl-dots .owl-dot.active span,
+.wpb-is-content-type-slider.owl-theme .owl-dots .owl-dot:hover span {
+    background: #3498db;
+}
+.wpb-instragram-feed.owl-theme .owl-nav [class*=owl-] {
+    background: #3498db;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.wpb-instragram-feed.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #2980b9;
+}
+
+/**
+ * Sidebar View
+ */
+
+.sidebar-view-enable .wpb-is-item-title {
+    display: none;
+}
+.sidebar-view-enable .wpb-is-item-link {
+    padding: 0;
+}
+.sidebar-view-enable .wpb-is-item-image:before {
+    display: none!important;
+}
+.sidebar-view-enable .wpb-is-item {
+    padding: 5px;
+}
+.wpb-is-wrapper.sidebar-view-enable.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
